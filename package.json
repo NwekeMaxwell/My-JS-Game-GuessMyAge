@@ -1,0 +1,11 @@
+{
+  "name": "findmyage",
+  "version": "1.0.0",
+  "description": "find my age game",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nweke Maxwell",
+  "license": "ISC"
+}

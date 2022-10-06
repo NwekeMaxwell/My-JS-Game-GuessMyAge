@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(to right bottom, #654, #234);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  height: 91vh;
+  width: 70vw;
+  margin: 5rem auto;
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 400;
+  display: grid;
+  grid-template-rows: 25vh 1vh 62vh 5vh;
+}
+header {
+  grid-row: 1 / 2;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+.line {
+  background: #fff;
+  grid-row: 2 / 3;
+}
+main {
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) min-content;
+  grid-template-columns: repeat(2, minmax(6rem, 1fr));
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+.footer {
+  background-color: #234;
+  grid-row: 4 / 5;
+  text-align: center;
+  align-self: center;
+  font-size: small;
+}
+.h1 {
+  align-self: center;
+  font-size: 6rem;
+  margin: auto;
+}
+.between {
+  text-align: center;
+  font-size: 3rem;
+}
+.rightup {
+  align-items: center;
+  justify-items: center;
+}
+.rightdown {
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+}
+.leftup {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+.leftdown {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.gif {
+  height: 26vh;
+  width: 35vw;
+}
+.output {
+  font-size: 17rem;
+  background-image: linear-gradient(to right top, #654, #234);
+  width: 1.2em;
+  text-align: center;
+}
+.input {
+  display: block;
+  padding: 4rem;
+  width: 18vw;
+  font-size: 5rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  border: 1px solid green;
+}
+.guess {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+}
+.btn {
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #aaa;
+  transform: scale(1.05);
+}
+.btn:active {
+  transform: scale(1);
+}
+.info {
+  font-size: 3rem;
+}
+.score {
+  font-size: 2rem;
+}
+.highscore {
+  font-size: 2rem;
+}
+.scohigh {
+  font-size: 2rem;
+}
+.again {
+  background-color: #654;
+  grid-column: 1 / -1;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    height: 98vh;
+    margin: 1rem auto;
+    width: 95vw;
+  }
+  .input {
+    font-size: 2.5rem;
+    padding: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .h1 {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+  .between {
+    font-size: 2rem;
+  }
+  .output {
+    font-size: 10rem;
+  }
+  .scohigh {
+    font-size: 1.5rem;
+  }
+  .info {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .input {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .h1 {
+    font-size: 2.5rem;
+  }
+  .between {
+    font-size: 1.5rem;
+  }
+}
