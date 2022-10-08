@@ -23,6 +23,7 @@ const gameActions = function () {
     displayMessage("🥳That's my age🎉");
     document.querySelector(".container").style.backgroundColor = "green";
     document.querySelector(".output").textContent = secretNumber;
+    document.querySelector(".gif").src = `../img/dancing.gif`;
     if (score > highscore) {
       highscore = score;
       document.querySelector(".highscore").textContent = highscore;
@@ -75,6 +76,7 @@ const playAgain = function () {
   document.querySelector(".output").textContent = "?";
   document.querySelector(".input").value = "";
   document.querySelector(".score").textContent = score;
+  document.querySelector(".gif").src = `../img/walking.gif`;
 };
 
 //calling the reset / play again function at the click of the button
